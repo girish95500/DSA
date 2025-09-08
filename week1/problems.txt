@@ -101,3 +101,11 @@ input: Two sorted arrays A (size N), B (size M)
 output: Single merged sorted array
 
 constraints: 0 ≤ N, M ≤ 2*10^5, O(N+M) time
+
+Problem14: Intersection of Two Sorted Arrays
+
+input: Arrays A (size N), B (size M)
+
+output: Unique intersection elements in any order
+
+constraints: 0 ≤ N, M ≤ 2*10^5, O(N+M) except output array no extra space should be used
