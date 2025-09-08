@@ -1,0 +1,103 @@
+Problem1: Check Prime
+
+input: Integer n
+
+output: true if prime else false
+
+constraints: 1 ≤ n ≤ 10^12, time O(√n)
+
+Problem2: Sieve of Eratosthenes
+
+input: Integer n
+
+output: All primes ≤ n in increasing order
+
+constraints: 1 ≤ n ≤ 10^7, time O(n log log n), space O(n)
+
+Problem3: Integer Square Root (Binary Search)
+
+input: Non-negative integer x
+
+output: ⌊√x⌋
+
+constraints: 0 ≤ x ≤ 10^18, time O(log x)
+
+Problem4: GCD & LCM
+
+input: Two integers a, b
+
+output: gcd(a, b) and lcm(a, b)
+
+constraints: 1 ≤ a, b ≤ 10^12
+
+Problem5: Reverse Integer
+
+input: Integer x
+
+output: Reversed digits of x; if overflow (32-bit) output 0
+
+constraints: -2^31 ≤ x < 2^31
+
+Problem6: Palindrome Number
+
+input: Non-negative integer n
+
+output: true if n is palindrome else false
+
+constraints: 0 ≤ n ≤ 10^18, no string conversion
+
+Problem7: Power of Two Check
+
+input: Integer n
+
+output: true if n is a power of two else false
+
+constraints: -10^18 ≤ n ≤ 10^18
+
+Problem8: Missing Number (1..N)
+
+input: Array of size N-1 containing unique numbers from 1..N
+
+output: The missing number
+
+constraints: 2 ≤ N ≤ 2*10^5
+
+Problem9: Find Duplicate (1..N)
+
+input: Array A of size N+1 with numbers 1..N (at least one duplicate)
+
+output: Any one duplicate value
+
+constraints: 2 ≤ N ≤ 2*10^5, O(N) time, O(1) space
+
+Problem10: Maximum Subarray Sum
+
+input: Array A of size N
+
+output: Maximum subarray sum
+
+constraints: 1 ≤ N ≤ 2*10^5, -10^9 ≤ A[i] ≤ 10^9
+
+Problem11: Binary Search
+
+input: Sorted array A of size N, target x
+
+output: Index of x or -1
+
+constraints: 1 ≤ N ≤ 2*10^5, O(log N)
+
+Problem12: Rotate Array by k
+
+input: Array A of size N, integer k (right rotation)
+
+output: Rotated array
+
+constraints: 1 ≤ N ≤ 2*10^5, 0 ≤ k ≤ 10^9, O(N), O(1) space
+
+Problem13: Merge Two Sorted Arrays
+
+input: Two sorted arrays A (size N), B (size M)
+
+output: Single merged sorted array
+
+constraints: 0 ≤ N, M ≤ 2*10^5, O(N+M) time
