@@ -1,0 +1,27 @@
+class Solution {
+
+    ArrayList<Integer> intersection(int[] a, int[] b) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        int i=0,j=0;
+        while(i<a.length && j < b.length){
+            while(a[i]==a[i-1] &&  i<a.length){
+                i++;
+            }
+            while(b[j] == b[j-1] && j<b.length){
+                j++;
+            }
+            if(a[i] < b[j]) {
+                i++;
+            } else if(b[j] < a[i]) {
+                j++;
+            } else {
+                arr.add(a[i]);
+                i++;
+                j++;
+            }
+            
+            
+        }
+        return arr;
+    }
+}
