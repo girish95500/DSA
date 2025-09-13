@@ -1,0 +1,28 @@
+Problem4: GCD & LCM
+
+input: Two integers a, b
+
+output: gcd(a, b) and lcm(a, b)
+
+constraints: 1 ≤ a, b ≤ 10^12
+ 
+// Approach 
+ class Solution {
+    public static int[] lcmAndGcd(int a, int b) {
+        int arr[] = new int[2];
+        arr[1] = gcd(a,b);
+        arr[0] = (a*b)/arr[1];
+        return arr;
+        
+        
+    }
+    static int gcd(int a,int b){
+        while(b!=0){
+        int t = b;
+        b=a%b ;
+        a=t;
+        }
+        return a;
+        
+    }
+}
