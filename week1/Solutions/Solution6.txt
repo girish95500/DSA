@@ -1,0 +1,25 @@
+Problem6: Palindrome Number
+
+input: Non-negative integer n
+
+output: true if n is palindrome else false
+
+constraints: 0 ≤ n ≤ 10^18, no string conversion
+
+
+// Basic Approach
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }
+       int num = x;
+       int rev=0;
+       while(num>0){
+        int temp = num%10;
+        rev = rev*10+temp;
+        num = num/10;
+       }
+       return rev == x;
+    }
+}
