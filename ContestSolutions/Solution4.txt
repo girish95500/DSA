@@ -1,0 +1,45 @@
+Q4. LCM of Range
+
+Problem
+You are given two integers L and R. Find the LCM of all integers between L and R inclusive. Since the number can be very large, output the result modulo 10^9+7.
+
+Input
+Two integers L and R
+
+Output
+A single integer: the LCM of numbers from L to R, modulo 1e9+7.
+
+Constraints
+1 ≤ L ≤ R ≤ 10^5
+
+Example
+Input: 1 5
+Output: 60
+
+Input: 3 4
+Output: 12
+
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int l = sc.nextInt();
+        int h =sc.nextInt();
+        int currGcd  =l,lcm =l;
+        for(int i=l+1;i<=h;i++){
+            currGcd = gcd(i,currGcd);
+            lcm = (lcm*i)/currGcd;
+        }
+        System.out.print(lcm);
+    }
+    static int gcd(int a,int b){
+        while(b!=0){
+            int t = b;
+            b = a%b;
+            a=t;
+        }
+        return a;
+    }
+
+}
