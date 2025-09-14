@@ -1,0 +1,15 @@
+// Basic Approach 
+
+class Solution {
+    public int count(int x) {
+        int c =0;
+        while(x>0){
+            c++;
+            x = x/10;
+        }
+        return c;
+    }
+}
+
+// 
+//Some Log Function need to use for optimization Syntax No Idea 
