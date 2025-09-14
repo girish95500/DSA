@@ -10,7 +10,6 @@ class Solution {
                 c++;
             }
         }
-        return c>=2;
-        
+        return c==2;
     }
 }
