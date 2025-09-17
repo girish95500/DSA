@@ -41,4 +41,11 @@ class Main{
         }
         return a;
     }
+
 }
+
+
+// Approach is correct but will not work on large constriants due to large values of LCM result.
+// even the complexity looks good, but only issue is not making use of modulo 1e9+7p as the output is very large will throw integer overflow exception.
+
+Points: 100/300

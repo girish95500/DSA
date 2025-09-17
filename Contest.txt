@@ -95,3 +95,6 @@ Output: 60
 
 Input: 3 4
 Output: 12
+
+
+Total Points :  340/800

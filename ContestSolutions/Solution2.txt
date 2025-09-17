@@ -41,3 +41,12 @@ class Main{
     }
 
 }
+
+
+// Completely wrong.
+// asked weather the number contains 2 distinct prime factors or not.
+// example 175 -> 5 * 5 * 7 so there are 2 distinct prime factors return YES.
+// example 16 -> 2*2*2*2 so there are only 1 distinct prime factor return NO.
+// Wrong data type 2 ≤ n ≤ 10^12 should have used long here.
+
+Points : 0/200
