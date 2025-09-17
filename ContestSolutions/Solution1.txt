@@ -11,5 +11,4 @@ class Solution {
     }
 }
 
-// 
 //Some Log Function need to use for optimization Syntax No Idea 
