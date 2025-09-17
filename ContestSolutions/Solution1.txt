@@ -11,5 +11,13 @@ class Solution {
     }
 }
 
-// 
+
 //Some Log Function need to use for optimization Syntax No Idea 
+
+//if x==0 then this should return 1.
+
+//it fails here.
+
+//constraints issue. already mentioned 0 ≤ n ≤ 10^18. should have used long instead of int.
+
+Points : 80/100
