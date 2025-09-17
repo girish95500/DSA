@@ -54,3 +54,7 @@ public class Main {
         
     }
 }
+
+// 0 and 1 are not marked as non-primes
+
+Points : 160/200
