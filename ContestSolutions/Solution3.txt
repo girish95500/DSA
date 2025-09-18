@@ -45,7 +45,7 @@ public class Main {
                  break;
             }
         }
-        if(flag){
+        if(flag && n!=0 && n!=1){
             System.out.print("Yes");
         }
         else{
