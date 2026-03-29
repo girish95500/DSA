@@ -1,0 +1,65 @@
+Problem12: Rotate Array by k
+
+input: Array A of size N, integer k (right rotation)
+
+output: Rotated array
+
+constraints: 1 ≤ N ≤ 2*10^5, 0 ≤ k ≤ 10^9, O(N), O(1) space
+
+
+// Basic Approach
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n; 
+        for (int i = 1; i <= k; i++) {
+            int lastElement = nums[n - 1];       
+            for (int j = n - 1; j > 0; j--) {     
+                nums[j] = nums[j - 1];
+            }
+            nums[0] = lastElement;               
+        }
+    }
+}
+
+
+//Normal Approach
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int arr[] = new int[nums.length];
+        k=k%nums.length;
+        for(int i=0;i<nums.length;i++)
+         {
+            arr[(i+k)%nums.length] = nums[i];
+         }
+         for(int i=0;i<arr.length;i++){
+            nums[i] = arr[i];
+         }
+    }
+
+}
+
+//Optimized Approach
+class Solution {
+    void reverse(int[] nums, int i, int j) {
+        while (i < j) {                // move indices toward each other
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+        if (n == 0) return;            
+        k = k % n;
+        if (k == 0) return;            
+
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
+    }
+}
+

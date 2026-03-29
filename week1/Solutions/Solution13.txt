@@ -1,0 +1,46 @@
+Problem13: Merge Two Sorted Arrays
+
+input: Two sorted arrays A (size N), B (size M)
+
+output: Single merged sorted array
+
+constraints: 0 ≤ N, M ≤ 2*10^5, O(N+M) time
+
+
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int nums[] = new int[n+m];
+        int i=0,j=0;
+        int k=0;
+        while(i<n && j<m){
+            if(nums1[i]==nums2[j]){
+             nums[k] = nums1[i];
+             nums[k+1] = nums2[j];
+             k=k+2;
+             i++;
+             j++;
+            }
+            else if(nums1[i]>nums2[j]){
+                nums[k]=nums2[j];
+                j++;
+                k++;
+            }
+            else{
+                nums[k] = nums1[j];
+                i++;
+                k++;
+            }
+        }
+        while(i<n){
+            nums[k]=nums1[i];
+            i++;
+            k++;
+        }
+        while(j<m){
+            nums[k]=nums2[j];
+            j++;
+            k++;
+        }
+        return nums;
+    }
+}

@@ -1,0 +1,50 @@
+Problem9: Find Duplicate (1..N)
+
+input: Array A of size N+1 with numbers 1..N (at least one duplicate)
+
+output: Any one duplicate value
+
+constraints: 2 ≤ N ≤ 2*10^5, O(N) time, O(1) space
+
+
+// Basic Approach
+class Solution {
+    public int findDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]==nums[i-1]){
+                return nums[i];
+            }
+        }
+        return -1;
+    }
+}
+
+//Another Approach
+class Solution {
+    public int findDuplicate(int[] nums) {
+       HashSet<Integer> set = new HashSet<>();
+       for(int i=0;i<nums.length;i++){
+        if(set.contains(nums[i])){
+            return nums[i];
+        }else{
+            set.add(nums[i]);
+        }
+       }
+       return -1;
+    }
+}
+
+// Optimized Approach
+class Solution {
+    public int findDuplicate(int[] nums) {
+      for(int i=0;i<nums.length;i++){
+        int ind = Math.abs(nums[i]);
+        if(nums[ind]<0){
+            return ind;
+        }
+        nums[ind] = -nums[ind];        
+      }
+      return -1;
+    }
+}

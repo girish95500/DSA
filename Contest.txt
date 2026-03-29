@@ -1,0 +1,100 @@
+Q1. Count the Digits 
+
+Problem
+
+Given a non-negative integer n, count how many digits it has.
+
+Input
+
+A single integer n
+
+
+Output
+
+A single integer: the number of digits in n.
+
+
+Constraints
+
+0 ≤ n ≤ 10^18
+
+
+Example
+
+Input: 12345
+Output: 5
+
+Input: 0
+Output: 1
+
+
+Q2. Almost Prime
+
+Problem 
+
+A number is called almost prime if it has exactly two distinct prime factors (e.g., 6 = 2×3, 10 = 2×5). Given an integer n, check if it is almost prime.
+
+Input
+A single integer n
+
+Output
+Print "YES" if n is almost prime, otherwise "NO".
+
+Constraints
+2 ≤ n ≤ 10^12
+
+Example
+Input: 10
+Output: YES
+
+Input: 12
+Output: NO
+
+
+Q3. Prime Sum Pair
+
+Problem
+Given an integer n, determine whether it can be expressed as the sum of two prime numbers.
+
+Input
+A single integer n
+
+Output
+Print "YES" if n can be written as p1 + p2 where both p1 and p2 are prime numbers.
+Otherwise, print "NO".
+
+Constraints
+2 ≤ n ≤ 10^7
+
+Example
+Input: 34
+Output: YES
+
+Input: 11
+Output: NO
+
+
+
+Q4. LCM of Range
+
+Problem
+You are given two integers L and R. Find the LCM of all integers between L and R inclusive. Since the number can be very large, output the result modulo 10^9+7.
+
+Input
+Two integers L and R
+
+Output
+A single integer: the LCM of numbers from L to R, modulo 1e9+7.
+
+Constraints
+1 ≤ L ≤ R ≤ 10^5
+
+Example
+Input: 1 5
+Output: 60
+
+Input: 3 4
+Output: 12
+
+
+Total Points :  340/800

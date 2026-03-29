@@ -1,0 +1,52 @@
+// Basic Approach 
+class Solution {
+    static boolean isPrime(int n) {
+        if(n==2 || n==3 ){
+            return true;
+        }
+        int c=0;
+        for(int i=2;i<=n/2;i++){
+            if(n%i==0){
+                c++;
+            }
+        }
+        return c==2;
+    }
+}
+
+// Optimized
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(isPrime(n)){
+            System.out.print("Yes");
+        }
+        else{
+            System.out.print("No");
+        }
+    }
+    static boolean isPrime(int n) {
+        if(n==1){
+           return false;
+       }
+       int c=0;
+       for(int i=2;i*i<=n;i++){
+           if(n%i==0){
+            c++;
+           }
+       }
+       return c==1;
+    }
+
+}
+
+
+// Completely wrong.
+// asked weather the number contains 2 distinct prime factors or not.
+// example 175 -> 5 * 5 * 7 so there are 2 distinct prime factors return YES.
+// example 16 -> 2*2*2*2 so there are only 1 distinct prime factor return NO.
+// Wrong data type 2 ≤ n ≤ 10^12 should have used long here.
+
+Points : 0/200
